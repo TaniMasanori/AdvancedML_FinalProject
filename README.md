@@ -46,12 +46,37 @@ pip install librosa matplotlib numpy scikit-learn seaborn
 
 ## Dataset
 
-The project uses the GuitarSet dataset, which should be organized as follows:
+This project uses the GuitarSet dataset, a collection of high-quality guitar recordings with rich annotations including chord labels, pitch contours, and playing style information.
+
+### GuitarSet Dataset Information
+- **360 excerpts** (approximately 30 seconds each)
+- Recorded by **6 different players**
+- Includes **comping and soloing versions**
+- Covers **5 styles**: Rock, Singer-Songwriter, Bossa Nova, Jazz, and Funk
+- Based on **3 chord progressions**: 12 Bar Blues, Autumn Leaves, and Pachelbel Canon
+- Recorded at **2 different tempi**: slow and fast
+- Audio recorded using a **hexaphonic pickup** (individual string signals) and reference microphone
+- Comprehensive **annotations in JAMS format** including pitch contours, note information, beat positions, and chord labels
+
+### Dataset Organization
 
 ```
 guitarset/
 ├── audio/            # Contains .wav audio files
-└── annotations/      # Contains chord annotation files
+├── audio_pickup/     # Individual string recordings
+├── audio_mic/        # Microphone recordings
+├── annotations/      # Contains chord annotation files
+├── test_data/        # Test dataset split
+└── training/         # Training dataset split
+```
+
+### Citation
+
+If you use GuitarSet for academic purposes, please cite the following publication:
+
+```
+Q. Xi, R. Bittner, J. Pauwels, X. Ye, and J. P. Bello, "Guitarset: A Dataset for Guitar Transcription", 
+in 19th International Society for Music Information Retrieval Conference, Paris, France, Sept. 2018.
 ```
 
 ## Usage
@@ -93,4 +118,23 @@ This will generate:
 
 ## Acknowledgments
 
-This project has been enhanced with the assistance of Claude AI by Anthropic.
+### Claude AI
+This project has been enhanced with the assistance of Claude 3.7 Sonnet, an AI assistant developed by Anthropic. Claude contributed to:
+
+- Code optimization and refactoring
+- Debugging complex model architectures
+- Data preprocessing workflow improvements
+- Implementation of visualization tools
+- Documentation of the codebase
+- Research on optimal hyperparameters
+
+### GuitarSet Dataset
+Special thanks to the creators of the GuitarSet dataset:
+- Qingyang Xi (NYU's Music and Audio Research Lab)
+- Rachel Bittner (NYU's Music and Audio Research Lab)
+- Johan Pauwels (Center for Digital Music at Queen Mary University of London)
+- Xuzhou Ye (NYU's Music and Audio Research Lab)
+- Juan Pablo Bello (NYU's Music and Audio Research Lab)
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
