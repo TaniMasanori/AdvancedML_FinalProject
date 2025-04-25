@@ -1,0 +1,57 @@
+# Dataset files
+data/*.wav
+data/*.mp3
+data/*.npy
+data/*.pkl
+
+# Trained models
+models/*.pt
+models/*.pth
+models/*.pkl
+models/*.h5
+models/*.hdf5
+
+# Results
+results/*.png
+results/*.jpg
+results/*.pdf
+results/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch specific
+*.pt
+*.pth
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# OS specific
+.DS_Store
+Thumbs.db 

@@ -1,0 +1,21 @@
+Guitar Chord Recognition Model Comparison
+=======================================
+
+Accuracy Comparison:
+CNN Model: 0.8984
+BERT Model: 0.8178
+NAIVE_BAYES Model: 0.3107
+
+Model Strengths and Weaknesses:
+
+CNN Model:
+- Best chord: C (F1: 0.9749)
+- Worst chord: F (F1: 0.8405)
+
+BERT Model:
+- Best chord: C (F1: 0.8992)
+- Worst chord: F (F1: 0.7464)
+
+NAIVE_BAYES Model:
+- Best chord: C (F1: 0.5446)
+- Worst chord: D (F1: 0.0000)
