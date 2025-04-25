@@ -72,8 +72,6 @@ guitarset/
 
 ### Citation
 
-If you use GuitarSet for academic purposes, please cite the following publication:
-
 ```
 Q. Xi, R. Bittner, J. Pauwels, X. Ye, and J. P. Bello, "Guitarset: A Dataset for Guitar Transcription", 
 in 19th International Society for Music Information Retrieval Conference, Paris, France, Sept. 2018.
