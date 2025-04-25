@@ -128,13 +128,5 @@ This project has been enhanced with the assistance of Claude 3.7 Sonnet, an AI a
 - Documentation of the codebase
 - Research on optimal hyperparameters
 
-### GuitarSet Dataset
-Special thanks to the creators of the GuitarSet dataset:
-- Qingyang Xi (NYU's Music and Audio Research Lab)
-- Rachel Bittner (NYU's Music and Audio Research Lab)
-- Johan Pauwels (Center for Digital Music at Queen Mary University of London)
-- Xuzhou Ye (NYU's Music and Audio Research Lab)
-- Juan Pablo Bello (NYU's Music and Audio Research Lab)
-
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
