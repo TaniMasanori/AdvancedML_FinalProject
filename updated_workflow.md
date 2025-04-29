@@ -112,35 +112,3 @@ The key improvement is the new feature extraction process:
 5. **Classification**: Train Gaussian Naive Bayes on these musical features
 
 This approach better aligns with musical theory by focusing directly on the frequencies that define musical notes, which should improve chord recognition accuracy.
-
----
-
-このプロジェクトの更新されたワークフロー:
-
-1. **前処理とデータ読み込み**:
-   - 生のオーディオファイルをMELスペクトログラムに変換
-   - 訓練・検証用データローダーを作成
-
-2. **モデルトレーニング**:
-   - **CNNモデル**: MELスペクトログラムを直接処理
-   - **BERTモデル**: CNN特徴抽出後に自己注意メカニズムを使用
-   - **ナイーブベイズモデル（更新）**: 
-     - FFTを使用してオーディオの周波数内容を分析
-     - 音楽ノート周波数（CからB）に基づいて12の特徴を抽出
-     - しきい値ベースの特徴抽出（信号/ノイス比）を適用
-     - これらの音楽的特徴でガウシアンナイーブベイズ分類器をトレーニング
-
-3. **モデル評価**:
-   - すべてのモデルの混同行列を生成
-   - 精度とF1スコアを比較
-   - モデルの強みと弱みを分析
-
-4. **予測**:
-   - CNN & BERT: オーディオをMELスペクトログラムに変換
-   - ナイーブベイズ: オーディオ信号から周波数特徴を抽出
-   - すべてのモデルからの予測を統合
-
-5. **可視化**:
-   - 主要な音楽ノートをマークした周波数スペクトルを分析
-   - 特徴抽出プロセスを可視化
-   - コード認識のための特徴の重要性を比較 
